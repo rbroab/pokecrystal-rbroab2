@@ -56,7 +56,8 @@ ItemNames::
 if DEF(FAITHFUL)
 	db "RageCandyBar@"
 else
-	db "Cake of Rage@"
+	;db "Cake of Rage@"
+	db "RageCandyBar@"
 endc
 	db "Sacred Ash@"
 	db "EnergyPowder@"

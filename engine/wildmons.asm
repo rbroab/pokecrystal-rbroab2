@@ -32,7 +32,12 @@ GetTimeOfDayNotEve:
 	ld a, [TimeOfDay]
 	cp EVE
 	ret nz
-	ld a, NITE ; ld a, DAY_F to make evening use day encounters
+	call Random ;added
+	cp 60 percent ;added
+	ld a, DAY ;added
+	ret c ;added
+	inc a ; NITE ;added
+;	ld a, NITE ; ld a, DAY_F to make evening use day encounters
 	ret
 
 

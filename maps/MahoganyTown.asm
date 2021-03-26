@@ -21,7 +21,7 @@ MahoganyTown_MapScriptHeader:
 	bg_event  3, 13, SIGNPOST_JUMPTEXT, MahoganyGymSignText
 
 	db 4 ; object events
-	object_event 19,  8, SPRITE_NEW_BARK_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, PERSONTYPE_SCRIPT, 0, PokefanMScript_0x19002e, EVENT_MAHOGANY_TOWN_POKEFAN_M_BLOCKS_EAST
+	object_event 19,  8, SPRITE_NEW_BARK_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, PERSONTYPE_SCRIPT, 0, PokefanMScript_0x19002e, EVENT_MAHOGANY_TOWN_POKEFAN_M_BLOCKS_EAST
 	object_event  5,  8, SPRITE_GRAMPS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 1, -1, -1, 0, PERSONTYPE_SCRIPT, 0, GrampsScript_0x19007e, -1
 	object_event  6, 14, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, PERSONTYPE_COMMAND, jumptextfaceplayer, UnknownText_0x190276, EVENT_MAHOGANY_TOWN_POKEFAN_M_BLOCKS_GYM
 	object_event 12,  8, SPRITE_NEW_BARK_LYRA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, PERSONTYPE_COMMAND, jumptextfaceplayer, UnknownText_0x1902f2, EVENT_MAHOGANY_MART_OWNERS
@@ -112,8 +112,10 @@ if DEF(FAITHFUL)
 	para "yummy RageCandy-"
 	line "Bar!"
 else
-	para "yummy Cake of"
-	line "Rage!"
+	;para "yummy Cake of"
+	;line "Rage!"
+	para "yummy RageCandy-"
+	line "Bar!"
 endc
 
 	para "Right now, it can"
@@ -134,7 +136,8 @@ UnknownText_0x1901a6:
 if DEF(FAITHFUL)
 	text "RageCandyBars are"
 else
-	text "Cakes of Rage are"
+	;text "Cakes of Rage are"
+	text "RageCandyBars are"
 endc
 	line "sold out."
 

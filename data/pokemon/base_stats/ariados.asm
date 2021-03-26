@@ -6,7 +6,7 @@ else
 	;   hp  atk  def  spd  sat  sdf
 endc
 
-	db BUG, POISON
+	db BUG, DARK ; POISON
 	db 90 ; catch rate
 	db 134 ; base exp
 	db NO_ITEM ; item 1

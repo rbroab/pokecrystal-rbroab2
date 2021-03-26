@@ -9,7 +9,7 @@ endc
 if DEF(FAITHFUL)
 	db GROUND, GROUND
 else
-	db GROUND, GROUND
+	db GROUND, GHOST
 endc
 	db 75 ; catch rate
 if DEF(FAITHFUL)

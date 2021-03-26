@@ -56,6 +56,8 @@ PryceScript_0x199a9e:
 	setevent EVENT_GOT_HM05_WHIRLPOOL
 	;verbosegivetmhm TM_AVALANCHE
 	;setevent EVENT_GOT_TM67_AVALANCHE
+	;setevent EVENT_MAHOGANY_TOWN_POKEFAN_M_BLOCKS_EAST
+	setmapscene MAHOGANY_TOWN, $1
 	thisopenedtext
 
 	text "That HM contains"

@@ -216,7 +216,7 @@ GenericTrainerGruntM9:
 	para "Then our base in"
 	line "Mahogany…"
 	
-	para "And now this?!"
+	para "Now this?!"
 	
 	para "You keep making me"
 	line "look bad!"

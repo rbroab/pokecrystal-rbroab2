@@ -136,11 +136,16 @@ if DEF(FAITHFUL)
 	para "City burned down"
 	line "150 years ago."
 else
-	line "how the Gong Tower"
-	cont "in Ecruteak City"
+;	line "how the Gong Tower"
+;	cont "in Ecruteak City"
+;
+;	para "burned down 150"
+;	line "years ago."
+	line "how the Brass"
+	cont "Tower in Ecruteak"
 
-	para "burned down 150"
-	line "years ago."
+	para "City burned down"
+	line "150 years ago."
 endc
 	done
 

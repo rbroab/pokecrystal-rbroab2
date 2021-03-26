@@ -4,8 +4,8 @@
 	db ELECTRIC, ELECTRIC
 	db 3 ; catch rate
 	db 216 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
+	db MAGNET ; NO_ITEM ; item 1
+	db MAGNET ; NO_ITEM ; item 2
 	dn GENDERLESS, 15 ; gender, step cycles to hatch
 	dn 7, 7 ; frontpic dimensions
 	db VOLT_ABSORB ; ability 1

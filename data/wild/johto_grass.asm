@@ -630,7 +630,7 @@
 	db 9, KAKUNA
 	db 9, PIDGEY
 	db 8, PARAS
-	db 8, PARAS
+	db 6, PICHU
 	; day
 	db 7, CATERPIE
 	db 7, WEEDLE
@@ -711,7 +711,7 @@
 	db 31, MACHOP
 	db 33, MAROWAK
 	db 33, GOLBAT
-	db 33, GOLBAT
+	db 13, TYROGUE
 	; day
 	db 34, GRAVELER
 	db 35, MACHOKE
@@ -719,7 +719,7 @@
 	db 31, MACHOP
 	db 33, MAROWAK
 	db 33, GOLBAT
-	db 33, GOLBAT
+	db 13, TYROGUE
 	; nite
 	db 34, GRAVELER
 	db 35, GOLBAT
@@ -727,7 +727,7 @@
 	db 31, MARILL
 	db 33, MAROWAK
 	db 35, GOLBAT
-	db 35, GOLBAT
+	db 15, TYROGUE
 
 	map_id MOUNT_MORTAR_B1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
@@ -1970,7 +1970,5 @@
 	db 18, HOOTHOOT
 	db 17, MISDREAVUS
 	db 18, HAUNTER	
-
-
 
 	db -1 ; end

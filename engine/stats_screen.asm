@@ -457,12 +457,14 @@ StatsScreen_LoadGFX: ; 4dfb6 (13:5fb6)
 	; load center graphics
 	ld d, h
 	ld e, l
-	ld hl, VTiles2 tile $3e
+;	ld hl, VTiles2 tile $3e
+	ld hl, VTiles2 tile $3f
 	lb bc, BANK(CaughtBallsGFX), 1
 	call Request2bpp
 	; draw center
 	hlcoord 8, 6
-	ld a, $3e ; center
+;	ld a, $3e ; center
+	ld a, $3f ; center	
 	ld [hl], a
 	ret
 
@@ -627,10 +629,10 @@ StatsScreen_LoadGFX: ; 4dfb6 (13:5fb6)
 	ld a, [TempMonCaughtGender]
 	and FEMALE
 	jr z, .male
-	ld a, "♀"
+	ld a, " " ; ♀
 	jr .got_gender
 .male
-	ld a, "♂"
+	ld a, " " ; ♂
 .got_gender
 	hlcoord 8, 15
 	ld [hl], a
@@ -769,6 +771,28 @@ OrangePage_:
 	ld de, .ability
 	call PlaceString
 	ld a, [TempMonAbility]
+	
+	and ABILITY_MASK
+	cp ABILITY_1
+	jr z, .ability_1
+	cp ABILITY_2
+	jr z, .ability_2
+	cp HIDDEN_ABILITY
+	ld a, "H"
+;	ld a, $3f ; bold H
+	jr .got_ability
+.ability_1
+	ld a, "1"
+	jr .got_ability
+.ability_2
+	ld a, "2"
+	jr .got_ability
+	
+.got_ability
+	hlcoord 9, 12
+	ld [hl], a
+	ld a, [TempMonAbility]
+	
 	ld b, a
 	ld a, [TempMonSpecies]
 	ld c, a
@@ -819,7 +843,8 @@ TN_PrintToD
 	db "Nite@"
 
 .unknown
-	db "???@"
+	;db "???@"
+	db "Eve@"
 
 TN_PrintLocation:
 	ld a, [TempMonCaughtLocation]

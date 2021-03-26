@@ -2,7 +2,7 @@ if DEF(FAITHFUL)
 	db  95,  85,  85,  35,  65,  65
 	;   hp  atk  def  spd  sat  sdf
 else
-	db  95,  95,  95,  35,  65,  65
+	db  95,  95,  95,  35,  95,  75
 	;   hp  atk  def  spd  sat  sdf
 endc
 
@@ -15,7 +15,7 @@ endc
 	dn 6, 6 ; frontpic dimensions
 	db DAMP ; ability 1
 	db WATER_ABSORB ; ability 2
-	db UNAWARE ; hidden ability
+	db POISON_TOUCH ; UNAWARE ; hidden ability
 	db MEDIUM_FAST ; growth rate
 	dn AMPHIBIAN, FIELD ; egg groups
 

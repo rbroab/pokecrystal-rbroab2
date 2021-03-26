@@ -103,6 +103,14 @@ SpecialGiveWobbuffet: ; 7305
 	ld hl, PartyMon1Item
 	call _GetLastPartyMonAttribute
 	ld [hl], SITRUS_BERRY
+	
+; Shiny
+; Shiny
+    ld hl, PartyMon1Shiny
+    call _GetLastPartyMonAttribute
+    ld a, [hl]
+    or a, SHINY_MASK
+    ld [hl], a
 
 ; OT ID.
 	ld hl, PartyMon1ID

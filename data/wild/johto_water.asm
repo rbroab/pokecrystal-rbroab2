@@ -267,8 +267,8 @@
 	map_id CHERRYGROVE_BAY
 	db 6 percent ; encounter rate
 	db 20, TENTACOOL
-	db 15, TENTACOOL
 	db 20, CORSOLA
+	db 20, MANTINE
 
 	map_id ROUTE_32_COAST
 	db 6 percent ; encounter rate

@@ -2200,7 +2200,8 @@ LickitungEvosAttacks:
 	db 1, LICK
 	db 1, WRAP
 	db 7, SUPERSONIC
-	db 13, DEFENSE_CURL
+	db 11, DEFENSE_CURL
+	db 15, ROLLOUT
 	db 19, STOMP
 	db 25, KNOCK_OFF
 	db 31, DISABLE
@@ -2208,6 +2209,9 @@ LickitungEvosAttacks:
 	db 43, SCREECH
 	db 49, CRUNCH
 	db 54, POWER_WHIP
+	db 60, SEISMIC_TOSS
+	db 64, DYNAMICPUNCH
+	db 69, DOUBLE_EDGE
 	db 0 ; no more level-up moves	
 
 KoffingEvosAttacks:
@@ -3797,9 +3801,9 @@ HoppipEvosAttacks:
 	db 1, SPLASH
 	db 4, HEALINGLIGHT
 	db 5, TACKLE
-	db 7, LEER
-	db 10, GROWTH
-	db 13, POISONPOWDER
+	db 7, POISONPOWDER
+	db 10, GUST
+	db 13, GROWTH
 	db 15, STUN_SPORE
 	db 17, SLEEP_POWDER
 	db 20, LEECH_SEED
@@ -3821,9 +3825,9 @@ SkiploomEvosAttacks:
 	db 1, SPLASH
 	db 4, HEALINGLIGHT
 	db 5, TACKLE
-	db 7, LEER
-	db 10, GROWTH
-	db 13, POISONPOWDER
+	db 7, POISONPOWDER
+	db 10, GUST
+	db 13, GROWTH
 	db 15, STUN_SPORE
 	db 17, SLEEP_POWDER
 	db 20, LEECH_SEED
@@ -3848,9 +3852,9 @@ JumpluffEvosAttacks:
 	db 1, SPLASH
 	db 4, HEALINGLIGHT
 	db 5, TACKLE
-	db 7, LEER
-	db 10, GROWTH
-	db 13, POISONPOWDER
+	db 7, POISONPOWDER
+	db 10, GUST
+	db 13, GROWTH
 	db 15, STUN_SPORE
 	db 17, SLEEP_POWDER
 	db 20, LEECH_SEED
@@ -3867,9 +3871,9 @@ JumpluffEvosAttacks:
 
 AipomEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, BITE
 	db 1, SCRATCH
 	db 1, LEER
+	db 1, BITE	
 	db 4, MUD_SLAP
 	db 7, FURY_STRIKES
 	db 12, BATON_PASS
@@ -3882,6 +3886,7 @@ AipomEvosAttacks:
 	db 44, THRASH
 	db 50, CRUNCH
 	db 55, DIZZY_PUNCH
+	db 61, DYNAMICPUNCH
 	db 0 ; no more level-up moves
 	
 SunkernEvosAttacks:
@@ -4460,18 +4465,18 @@ ScizorEvosAttacks:
 
 ShuckleEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, ENCORE
 	db 1, MUD_SLAP ; Constrict → GSC TM move
-	db 1, DEFENSE_CURL ; Withdraw → similar move
-	db 1, ROLLOUT
-	db 5, ENCORE
-	db 9, WRAP
-	db 12, STRING_SHOT ; Struggle Bug → HGSS tutor move
+	db 1, WRAP
+	db 5, DEFENSE_CURL ; Withdraw → similar move
+	db 7, ROLLOUT
+	db 11, STRING_SHOT ; Struggle Bug → HGSS tutor move
 	db 16, SAFEGUARD
 	db 20, REST
 	db 23, ROCK_THROW
 	db 27, ACID ; Gastro Acid → egg move
-	db 31, DISABLE ; Power Trick → new move
-	db 34, BUG_BUZZ
+	db 31, BUG_BUZZ ; Power Trick → new move
+	db 34, DISABLE
 	db 38, ROCK_BLAST ; Rock Slide → Sw/Sh move
 	db 42, BUG_BITE
 	db 45, ROCK_SLIDE ; Power Split + Guard Split → Rock Slide
@@ -4755,6 +4760,7 @@ endc
 DelibirdEvosAttacks:
 	db 0 ; no more evolutions
 ;	db 1, ;PRESENT
+	db 1, PAY_DAY
 	db 1, MUD_SLAP
 	db 1, LEER
 	db 1, TACKLE
@@ -4929,6 +4935,8 @@ Porygon2EvosAttacks:
 	
 StantlerEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, REFLECT
+	db 1, LIGHT_SCREEN
 	db 1, MUD_SLAP
 	db 1, TACKLE
 	db 8, LEER
@@ -4941,8 +4949,9 @@ StantlerEvosAttacks:
 	db 44, CONFUSE_RAY
 	db 49, DOUBLE_EDGE
 	db 55, PSYCHIC_M
-	db 61, HI_JUMP_KICK
-	db 66, PSYSTRIKE
+	db 61, CRUNCH
+	db 66, HI_JUMP_KICK
+	db 70, PSYSTRIKE
 	db 0 ; no more level-up moves	
 
 SmeargleEvosAttacks:
@@ -5334,5 +5343,5 @@ RotomEvosAttacks:
 	;db 75, MIND_READER
 	db 69, THUNDER
 	db 76, ZAP_CANNON
-	db 85, PSYCHIC_M
+	;db 85, PSYCHIC_M
 	db 0 ; no more level-up moves DARK_PULSE

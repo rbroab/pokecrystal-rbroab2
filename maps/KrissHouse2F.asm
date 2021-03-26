@@ -6,10 +6,11 @@ KrissHouse2F_MapScriptHeader:
 	callback MAPCALLBACK_TILES, KrissHouse2FSetSpawn
 
 	db 1 ; warp events
-;	warp_event  7,  0, KRISS_HOUSE_1F, 3
+	warp_event  7,  0, KRISS_HOUSE_1F, 3
 ;	warp_event  7,  0, LAKE_OF_RAGE_HIDDEN_POWER_HOUSE, 1	
 ;	warp_event  7,  0, KURTS_HOUSE, 1
-	warp_event  7,  0, RADIO_TOWER_3F, 1
+;	warp_event  7,  0, RADIO_TOWER_3F, 1
+;	warp_event  7,  0, GOLDENROD_MUSEUM_1F, 1
 
 	db 0 ; coord events
 
@@ -235,11 +236,11 @@ if DEF(DEBUG)
 	giveitem PREMIER_BALL, 99
 	giveitem CHERISH_BALL, 99
 	giveitem EXP_SHARE, 2
-	giveitem FAN, 1
-	giveitem WASHER, 1
-	giveitem FRIDGE, 1
-	giveitem LAWNMOWER, 1
-	giveitem OVEN, 1
+;	giveitem FAN, 1
+;	giveitem WASHER, 1
+;	giveitem FRIDGE, 1
+;	giveitem LAWNMOWER, 1
+;	giveitem OVEN, 1
 	setflag ENGINE_CREDITS_SKIP
 	giveitem SHINY_CHARM
 	setflag ENGINE_HAVE_SHINY_CHARM
@@ -268,9 +269,9 @@ if DEF(DEBUG)
 	; hm slaves
 	givepoke MEW, 100, LEFTOVERS
 	loadvar PartyMon2Moves+0, FLY
-	loadvar PartyMon2Moves+1, SURF
-	loadvar PartyMon2Moves+2, STRENGTH
-	loadvar PartyMon2Moves+3, CUT
+	loadvar PartyMon2Moves+1, FALSE_SWIPE
+	loadvar PartyMon2Moves+2, ROCK_SMASH
+	loadvar PartyMon2Moves+3, HEADBUTT
 	loadvar PartyMon2PP+0, 15
 	loadvar PartyMon2PP+1, 15
 	loadvar PartyMon2PP+2, 15

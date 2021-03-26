@@ -445,7 +445,7 @@ GetGSBallPichu:
 	ld hl, PartyMon1Level
 	ld bc, PARTYMON_STRUCT_LENGTH
 	call Trade_GetAttributeOfCurrentPartymon
-	ld a, 30
+	ld a, 15
 	ld [CurPartyLevel], a
 	ld a, [wOTTrademonSpecies]
 	ld [CurPartySpecies], a

@@ -176,10 +176,10 @@ AddHallOfFameEntry: ; 14b5f
 AskOverwriteSaveFile: ; 14b89
 	ld a, [wSaveFileExists]
 	and a
-;	jr nz, .ok
-	jr z, .erase
-	call CompareLoadedAndSavedPlayerID
-	jr z, .ok
+	jr nz, .ok
+;	jr z, .erase
+;	call CompareLoadedAndSavedPlayerID
+;	jr z, .ok
 	ld hl, UnknownText_0x15297
 	ld b, BANK(UnknownText_0x15297)
 	call MapTextbox
@@ -190,7 +190,7 @@ AskOverwriteSaveFile: ; 14b89
 	call CloseWindow
 	and a
 	jr nz, .refused
-.erase	
+;.erase	
 	call ErasePreviousSave
 .ok
 	and a
@@ -252,7 +252,7 @@ SaveGameData:: ; 14c10
 	ld a, 2
 	ld [hVBlank], a
 	dec a ; ld a, 1
-	dec a ; ld a, TRUE
+;	dec a ; ld a, TRUE
 	ld [wSaveFileExists], a
 	farcall StageRTCTimeForSave
 	call ValidateSave

@@ -18,7 +18,7 @@ MountMortarB1F_MapScriptHeader:
 	strengthboulder_event  9, 10
 	itemball_event 29, 12, HYPER_POTION, 1, EVENT_MOUNT_MORTAR_B1F_HYPER_POTION
 	itemball_event  4, 16, CARBOS, 1, EVENT_MOUNT_MORTAR_B1F_CARBOS
-	itemball_event 34, 24, PROTECTOR, 1, EVENT_MOUNT_MORTAR_B1F_PROTECTOR
+	itemball_event 34, 24, IRON, 1, EVENT_MOUNT_MORTAR_B1F_PROTECTOR ;PROTECTOR,
 	itemball_event 32,  3, MAX_ETHER, 1, EVENT_MOUNT_MORTAR_B1F_MAX_ETHER
 	itemball_event 21, 26, PP_UP, 1, EVENT_MOUNT_MORTAR_B1F_PP_UP
 

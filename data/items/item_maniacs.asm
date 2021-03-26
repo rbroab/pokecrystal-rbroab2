@@ -14,19 +14,20 @@ GourmetManiacItemRewards:
 	dbw LEMONADE,     350
 	dbw MOOMOO_MILK,  500
 	dbw RAGECANDYBAR, 300
+	dbw REVIVAL_HERB, 3000
+	dbw ENERGY_ROOT,  2400	
 	dbw RARE_CANDY,   10000
 	dbw STICK,        2000
 	dbw LEFTOVERS,    4000
 	dbw LUCKY_EGG,    4000
+	dbw BIG_ROOT,	  4000
+	dbw MENTAL_HERB,  5000
+	dbw POWER_HERB,	  5000
+	dbw WHITE_HERB,	  5000	
 	dbw TINYMUSHROOM, 500
 	dbw BIG_MUSHROOM, 5000
 	dbw BALMMUSHROOM, 25000
 	dbw SWEET_HONEY,  300
-;	dbw REVIVAL_HERB  3000
-;	dbw ENERGY_ROOT	  2400
-;	dbw MENTAL_HERB   5000
-;	dbw POWER_HERB	  5000
-;	dbw WHITE_HERB	  5000
 	db -1
 
 OreManiacItemRewards:
@@ -48,7 +49,7 @@ OreManiacItemRewards:
 	dbw NUGGET,       10000
 	dbw BIG_NUGGET,   20000
 	dbw PEARL,         2000
-	dbw BIG_PEARL,     8000
+	dbw BIG_PEARL,     9600
 	dbw PEARL_STRING, 16000
 	dbw STARDUST,      3000
 	dbw STAR_PIECE,   12000

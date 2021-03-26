@@ -7,7 +7,7 @@ ContestMons:
 	db  5, BUTTERFREE, 12, 15
 	db  5, BEEDRILL,   12, 15
 	db 10, VENONAT,    10, 16
-	db 10, PARAS,      10, 17
+	db 15, PARAS,      10, 17
 	db  5, VENOMOTH,   12, 15
 ;	db  5, YANMA,      13, 15
 	db  5, SCYTHER,    13, 15

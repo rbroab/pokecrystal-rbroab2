@@ -468,7 +468,7 @@
 	db 47, WEEPINBELL
 	db 48, KADABRA
 	db 51, JIGGLYPUFF
-	db 47, WIGGLYTUFF
+	db  8, TOGEPI
 	; day
 	db 46, PIDGEOTTO
 	db 46, GRANBULL
@@ -476,7 +476,7 @@
 	db 47, WEEPINBELL
 	db 48, KADABRA
 	db 51, JIGGLYPUFF
-	db 47, WIGGLYTUFF
+	db  8, TOGEPI
 	; nite
 	db 46, NOCTOWL
 	db 46, PERSIAN
@@ -1008,7 +1008,7 @@
 	db 37, DODUO
 	db 39, PONYTA
 	db 37, DODRIO
-	db 37, DODRIO
+	db 37, ESPEON
 	; day
 	db 35, DODUO
 	db 35, ARBOK
@@ -1024,7 +1024,7 @@
 	db 37, QUAGSIRE
 	db 39, NOCTOWL
 	db 37, NOCTOWL
-	db 37, NOCTOWL
+	db 37, UMBREON
 
 	map_id ROUTE_28
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -1084,7 +1084,7 @@
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
 	db 65, CROBAT
-	db 65, PARASECT
+	db 65, LICKITUNG
 	db 66, PRIMEAPE
 	db 67, TANGROWTH
 	db 68, MACHAMP
@@ -1092,7 +1092,7 @@
 	db 70, DITTO
 	; day
 	db 65, CROBAT
-	db 65, PARASECT
+	db 65, LICKITUNG
 	db 66, PRIMEAPE
 	db 67, TANGROWTH
 	db 68, MACHAMP
@@ -1100,7 +1100,7 @@
 	db 70, DITTO
 	; nite
 	db 65, CROBAT
-	db 65, PARASECT
+	db 65, LICKITUNG
 	db 66, PRIMEAPE
 	db 67, TANGROWTH
 	db 68, MACHAMP
@@ -1494,7 +1494,7 @@
 	db 59, ARCANINE
 	db 59, RAPIDASH
 	db 60, RAPIDASH
-	db 60, RAPIDASH
+	db 60, PORYGON
 	; day
 	db 58, RATICATE
 	db 56, WEEZING
@@ -1502,7 +1502,7 @@
 	db 59, ARCANINE
 	db 59, RAPIDASH
 	db 60, RAPIDASH
-	db 60, RAPIDASH
+	db 60, PORYGON
 	; nite
 	db 58, HAUNTER
 	db 56, WEEZING
@@ -1510,7 +1510,7 @@
 	db 59, HOUNDOOM
 	db 59, RAPIDASH
 	db 60, RAPIDASH
-	db 60, RAPIDASH
+	db 60, PORYGON
 
 	map_id POKEMON_MANSION_B1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite

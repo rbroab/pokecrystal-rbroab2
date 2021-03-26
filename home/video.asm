@@ -453,11 +453,11 @@ AnimateTileset:: ; 17d3
 	ret z
 
 ; Back out if we're too far into VBlank
-	ld a, [rLY]
-	cp 144
-	ret c
-	cp 151
-	ret nc
+;	ld a, [rLY]
+;	cp 144
+;	ret c
+;	cp 151
+;	ret nc
 
 	ld a, [hROMBank]
 	push af

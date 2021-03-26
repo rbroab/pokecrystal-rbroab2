@@ -5,6 +5,7 @@ ItemFinder: ; 12580
 	jr .resume
 
 .found_something
+	ld [Buffer1], a
 	ld hl, .Script_FoundSomething
 
 .resume
@@ -14,8 +15,34 @@ ItemFinder: ; 12580
 	ret
 ; 12599
 
-.ItemfinderSound: ; 12599
-	ld c, 4
+;.ItemfinderSound: ; 12599
+;;	ld c, 4
+;	call WaitSFX
+.ItemfinderEffect:
+	ld a, [Buffer1]
+;	and $f
+;	jr z, .beneath_you	
+	and $f ; taxicab distance, 0-15
+	inc a ; 1-16
+	cp 9
+	jr c, .dist_ok
+	ld a, 9
+.dist_ok	
+;;	jr z, .beneath_you
+;	srl a
+;;	srl a
+;	and a
+;	jr z, .no_decrement
+;	dec a
+;.no_decrement
+;	cpl
+;.beneath_you
+;	add 5
+	srl a ; 0-4
+	ld c, a
+	ld a, 5
+	sub c ; 5-1
+	ld c, a
 .sfx_loop
 	push bc
 	ld de, SFX_SECOND_PART_OF_ITEMFINDER
@@ -25,13 +52,20 @@ ItemFinder: ; 12580
 	pop bc
 	dec c
 	jr nz, .sfx_loop
-	ret
+;	ret
+	ld d, PLAYER
+	ld a, [Buffer1]
+	rrca
+	rrca
+	ld e, a
+	farjp ApplyPersonFacing
 ; 125ad
 
 .Script_FoundSomething: ; 0x125ad
 	reloadmappart
 	special UpdateTimePals
-	callasm .ItemfinderSound
+;	callasm .ItemfinderSound
+	callasm .ItemfinderEffect
 	writetext .Text_FoundSomething
 	closetext
 	end

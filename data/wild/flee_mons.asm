@@ -5,7 +5,6 @@ SometimesFleeMons:
 	db MAGNEMITE
 	db GRIMER
 	db TANGELA
-	db TOGEPI
 	db MR__MIME
 	db EEVEE
 	db PORYGON
@@ -15,12 +14,8 @@ SometimesFleeMons:
 	db UNOWN
 	db SNUBBULL
 	db HERACROSS
-	db PICHU
 	db MUNCHLAX
 	db DELIBIRD	
-	db TYROGUE
-	db ELEKID
-	db MAGBY
 	db PHANPY
 	db TEDDIURSA
 	db LARVITAR	
@@ -29,11 +24,16 @@ SometimesFleeMons:
 	db -1
 
 OftenFleeMons:
+	db TOGEPI
 	db TOGETIC
 	db CUBONE
+	db PICHU	
 	db QUAGSIRE
 	db ESPEON
 	db UMBREON	
+	db TYROGUE
+	db ELEKID
+	db MAGBY	
 	db -1
 
 AlwaysFleeMons:

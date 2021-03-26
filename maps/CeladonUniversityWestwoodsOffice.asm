@@ -51,7 +51,8 @@ CeladonUniversityWestwoodsOfficeChildScript:
 if DEF(FAITHFUL)
 	cont "RageCandyBars."
 else
-	cont "Cakes of Rage."
+	;cont "Cakes of Rage."
+	cont "RageCandyBars."
 endc
 
 	para "You can have this"

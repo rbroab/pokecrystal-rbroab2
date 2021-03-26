@@ -364,7 +364,8 @@ UnknownText_0x185433:
 if DEF(FAITHFUL)
 	text "When the Brass"
 else
-	text "When the Gong"
+;	text "When the Gong"
+	text "When the Brass"
 endc
 	line "Tower burned down,"
 

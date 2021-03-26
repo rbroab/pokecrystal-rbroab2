@@ -302,9 +302,9 @@ PokeBallEffect: ; e8a2
 	jr z, .check_room
 	
 	; Don't mess with item backup struct if we are in a bug contest
-	ld a, [BattleType]
-	cp BATTLETYPE_CONTEST
-	jr z, .room_in_party
+;	ld a, [BattleType]
+;	cp BATTLETYPE_CONTEST
+;	jr z, .room_in_party
 
 
 

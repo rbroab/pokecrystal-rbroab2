@@ -5,7 +5,7 @@
 	db 120 ; catch rate
 	db 135 ; base exp
 	db NO_ITEM ; item 1
-	db PROTECTOR ; item 2
+	db NO_ITEM ; PROTECTOR ; item 2
 	dn FEMALE_50, 3 ; gender, step cycles to hatch
 	dn 7, 7 ; frontpic dimensions
 if DEF(FAITHFUL)

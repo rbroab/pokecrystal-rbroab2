@@ -1,4 +1,4 @@
-	db  40,  90,  70,  85,  40,  70
+	db  50,  90,  70,  85,  40,  70
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL

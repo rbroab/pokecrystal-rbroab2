@@ -1,15 +1,16 @@
-	db 106,  90, 110, 110, 110, 154
+	db 106,  90, 100, 100, 130, 154
 	;   hp  atk  def  spd  sat  sdf
 
 if DEF(FAITHFUL)
 	db PSYCHIC, FLYING
 else
-	db FLYING, PSYCHIC
+;	db FLYING, PSYCHIC
+	db PSYCHIC, FLYING
 endc
 	db 3 ; catch rate
 	db 220 ; base exp
-	db LUM_BERRY ; item 1
-	db LUM_BERRY ; item 2
+	db PEARL_STRING ; LUM_BERRY ; item 1
+	db PEARL_STRING ; LUM_BERRY ; item 2
 	dn GENDERLESS, 15 ; gender, step cycles to hatch
 	dn 7, 7 ; frontpic dimensions
 	db MULTISCALE ; ability 1

@@ -232,7 +232,8 @@ UnknownText_0x98a35:
 if DEF(FAITHFUL)
 	para "The Brass Tower,"
 else
-	para "The Gong Tower,"
+;	para "The Gong Tower,"
+	para "The Brass Tower,"
 endc
 	line "which was said to"
 
@@ -258,7 +259,8 @@ endc
 if DEF(FAITHFUL)
 	line "Brass Tower."
 else
-	line "Gong Tower."
+;	line "Gong Tower."
+	line "Brass Tower."
 endc
 
 	para "However…"

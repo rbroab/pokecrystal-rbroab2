@@ -1,5 +1,5 @@
 	;db 100, 100, 100, 100, 100, 100
-	db 70, 90, 90, 100, 120, 80	
+	db  65, 80, 90, 100, 120, 80	
 	;   hp  atk  def  spd  sat  sdf
 
 if DEF(FAITHFUL)
@@ -25,7 +25,7 @@ endc
 	dn NO_EGGS, NO_EGGS ; egg groups
 
 	; ev_yield
-	ev_yield   3,   0,   0,   0,   0,   0
+	ev_yield   1,   0,   0,   0,   2,   0
 	;         hp, atk, def, spd, sat, sdf
 
 	; tmhm
